@@ -309,16 +309,6 @@ This project demonstrates:
 
 ---
 
-# Screenshots
-
-You can add screenshots here later:
-
-```md
-![Workflow Screenshot](images/workflow.png)
-```
-
----
-
 # Deployment Ideas
 
 This workflow can be used in:
@@ -342,23 +332,6 @@ This workflow can be used in:
 
 ---
 
-# License
-
-This project is licensed under the MIT License.
-
----
-
-# Connect With Me
-
-## LinkedIn
-
-Add your LinkedIn profile link here
-
-## GitHub
-
-Add your GitHub profile link here
-
----
 
 # Repository Topics
 
@@ -375,8 +348,4 @@ ai-agent
 multimodal-ai
 ```
 
----
 
-# Star This Repository
-
-If you found this project useful, consider giving it a star on GitHub.
