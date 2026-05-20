@@ -1,0 +1,429 @@
+{
+  "available": true,
+  "metadata": {
+    "id": "a7c12f27-e4bd-49a2-9f6f-cd727f403b94",
+    "exportVersion": "20260513095706_AddImageStepPromptAndModelOutputModalities",
+    "tagline": "",
+    "agentDescription": "",
+    "industry": "",
+    "tasks": "",
+    "credentialExportOption": "Placeholder",
+    "dataSourceExportOption": "Placeholder",
+    "versionInformation": "5.00",
+    "state": "Preview",
+    "contributorId": "019e4654-bc6d-7688-9eb1-3aad1e285873",
+    "contributorGivenName": "MUHAMMAD ZAYD",
+    "contributorSurname": "DAWOOD",
+    "videoLink": null,
+    "readiness": "Template",
+    "department": "Everyone",
+    "agentLastUpdated": "2026-05-20T18:43:56.2805960Z",
+    "country": null
+  },
+  "agent": {
+    "id": "a7c12f27-e4bd-49a2-9f6f-cd727f403b94",
+    "name": "Untitled Agent (1)",
+    "executionName": "untitled_agent_%281%29",
+    "agentIcon": null,
+    "agentDescription": "",
+    "markdownDescription": null,
+    "videoLink": null,
+    "industry": null,
+    "subIndustries": null,
+    "tags": [],
+    "agentDetails": null,
+    "steps": [
+      {
+        "id": "1af6df1e-b3f5-457f-998c-99f1aca1ad29",
+        "stepType": "inputStep",
+        "position": {
+          "x": "49.76087",
+          "y": "-429.97885"
+        },
+        "handles": [
+          {
+            "uuid": "1ec3cbe0-cfc5-4bf3-95b2-2867984a4698",
+            "type": "source",
+            "label": "",
+            "tooltip": "",
+            "x": 78.98944,
+            "y": 44.989655
+          }
+        ],
+        "dependenciesObject": [],
+        "stepTitle": "Input",
+        "width": 288,
+        "height": 85,
+        "inputVariablesJson": "[]",
+        "preferredPdfParserId": "3b6d704c-3442-405b-afd4-d5dc64b6ea41"
+      },
+      {
+        "id": "56370948-86c0-434f-bd7d-19800083cc30",
+        "stepType": "AIOperation",
+        "position": {
+          "x": "311.45685",
+          "y": "166.40213"
+        },
+        "handles": [
+          {
+            "uuid": "8f061ed8-7d02-49d1-aeab-0853761202be",
+            "type": "source",
+            "label": "",
+            "tooltip": "",
+            "x": 99.5954,
+            "y": 72.69321
+          },
+          {
+            "uuid": "97892df1-3153-4406-af86-ad8f89cf255d",
+            "type": "target",
+            "label": "",
+            "tooltip": "",
+            "x": 99.5954,
+            "y": -3.4343262
+          }
+        ],
+        "dependenciesObject": [
+          {
+            "parentId": "df3df845-383d-4899-9c30-bb60136e88ef",
+            "parentHandleId": "16bb3950-9339-429c-8175-0a035b14037c",
+            "handleId": "97892df1-3153-4406-af86-ad8f89cf255d"
+          }
+        ],
+        "temperature": 0.7,
+        "includeDateTimeContext": true,
+        "includeUserDetailsContext": false,
+        "promptId": "e48ea93a-0f6c-4a1c-8a3b-6b8d94d356cb",
+        "modelId": "7dfea977-3ce5-4986-abc5-ffc312053a2e",
+        "toolIds": [
+          "9937daac-982b-4fe2-b552-b49dd93bb296"
+        ],
+        "toolParamsJson": "{}",
+        "stepTitle": "AI Model 2",
+        "width": 360,
+        "height": 105,
+        "aiOperationStepIncludeChatHistory": true,
+        "aiOperationStepIncludeAttachments": true,
+        "aiOperationStepUseDataSource": false,
+        "selectedDataSources": [],
+        "retryConfiguration": {
+          "enabled": false,
+          "maxRetries": 3,
+          "delay": 1000,
+          "maxDelay": 30000,
+          "backoffMultiplier": 1,
+          "useJitter": false
+        },
+        "mcpServerDeploymentParamsJson": "{}"
+      },
+      {
+        "id": "8724b441-db7c-4935-957d-c7b472ca5e97",
+        "stepType": "AIOperation",
+        "position": {
+          "x": "13.760872",
+          "y": "-267.4571"
+        },
+        "handles": [
+          {
+            "uuid": "8b075c05-83f9-4fc7-9e1e-1914ca2ab133",
+            "type": "target",
+            "label": "",
+            "tooltip": "",
+            "x": 99.5954,
+            "y": -3.4343262
+          },
+          {
+            "uuid": "ef4e992b-86ab-4a7f-bc25-ab46a4495012",
+            "type": "source",
+            "label": "",
+            "tooltip": "",
+            "x": 99.5954,
+            "y": 59.64276
+          }
+        ],
+        "dependenciesObject": [
+          {
+            "parentId": "1af6df1e-b3f5-457f-998c-99f1aca1ad29",
+            "parentHandleId": "1ec3cbe0-cfc5-4bf3-95b2-2867984a4698",
+            "handleId": "8b075c05-83f9-4fc7-9e1e-1914ca2ab133"
+          }
+        ],
+        "temperature": 1,
+        "includeDateTimeContext": true,
+        "includeUserDetailsContext": true,
+        "promptId": "352279fb-e826-4935-8132-5f0498083dc7",
+        "modelId": "6bbc8351-537d-4fac-aa79-79884b057c00",
+        "toolIds": [],
+        "toolParamsJson": "{}",
+        "stepTitle": "AI Model",
+        "width": 360,
+        "height": 105,
+        "aiOperationStepIncludeChatHistory": true,
+        "aiOperationStepIncludeAttachments": true,
+        "aiOperationStepUseDataSource": false,
+        "selectedDataSources": [],
+        "mcpServerDeploymentParamsJson": "{}"
+      },
+      {
+        "id": "99845e3f-31c6-4b2f-a40e-d066b5590187",
+        "stepType": "AIOperation",
+        "position": {
+          "x": "-300.97574",
+          "y": "167.79176"
+        },
+        "handles": [
+          {
+            "uuid": "4fca2bb3-4f04-4394-844b-79e1d9e372ac",
+            "type": "source",
+            "label": "",
+            "tooltip": "",
+            "x": 99.59549,
+            "y": 72.69321
+          },
+          {
+            "uuid": "d4d99ef2-40cd-4395-bf9d-a7e51bedf23f",
+            "type": "target",
+            "label": "",
+            "tooltip": "",
+            "x": 99.59549,
+            "y": -3.4343262
+          }
+        ],
+        "dependenciesObject": [
+          {
+            "parentId": "df3df845-383d-4899-9c30-bb60136e88ef",
+            "parentHandleId": "49792193-6252-4acc-9cac-3f26cb22ff67",
+            "handleId": "d4d99ef2-40cd-4395-bf9d-a7e51bedf23f"
+          }
+        ],
+        "temperature": 0.7,
+        "includeDateTimeContext": true,
+        "includeUserDetailsContext": false,
+        "promptId": "183db621-b378-4d09-aa5d-6178954b546b",
+        "modelId": "7dfea977-3ce5-4986-abc5-ffc312053a2e",
+        "toolIds": [
+          "9937daac-982b-4fe2-b552-b49dd93bb296"
+        ],
+        "toolParamsJson": "{}",
+        "stepTitle": "AI Model 1",
+        "width": 360,
+        "height": 105,
+        "aiOperationStepIncludeChatHistory": true,
+        "aiOperationStepIncludeAttachments": true,
+        "aiOperationStepUseDataSource": false,
+        "selectedDataSources": [],
+        "retryConfiguration": {
+          "enabled": false,
+          "maxRetries": 3,
+          "delay": 1000,
+          "maxDelay": 30000,
+          "backoffMultiplier": 1,
+          "useJitter": false
+        },
+        "mcpServerDeploymentParamsJson": "{}"
+      },
+      {
+        "id": "df3df845-383d-4899-9c30-bb60136e88ef",
+        "stepType": "approvalStep",
+        "position": {
+          "x": "12.803664",
+          "y": "-76.04333"
+        },
+        "handles": [
+          {
+            "uuid": "49792193-6252-4acc-9cac-3f26cb22ff67",
+            "type": "source",
+            "label": "Approved",
+            "tooltip": "",
+            "x": 87.00287,
+            "y": 54.147858
+          },
+          {
+            "uuid": "16bb3950-9339-429c-8175-0a035b14037c",
+            "type": "source",
+            "label": "Denied",
+            "tooltip": "",
+            "x": 112.18793,
+            "y": 54.147858
+          },
+          {
+            "uuid": "6388ef0d-2fa3-4c0f-849e-1975c3f44d24",
+            "type": "target",
+            "label": "",
+            "tooltip": "",
+            "x": 99.5954,
+            "y": -3.4343262
+          }
+        ],
+        "dependenciesObject": [
+          {
+            "parentId": "8724b441-db7c-4935-957d-c7b472ca5e97",
+            "parentHandleId": "ef4e992b-86ab-4a7f-bc25-ab46a4495012",
+            "handleId": "6388ef0d-2fa3-4c0f-849e-1975c3f44d24"
+          }
+        ],
+        "approvalRequestId": "244d1ee2-f549-452f-8131-f8ce22220c92",
+        "stepTitle": "Approval Request",
+        "width": 360,
+        "height": 101
+      },
+      {
+        "id": "f9265c56-d8dd-41d4-8430-eda9bf27bf2a",
+        "stepType": "outputStep",
+        "position": {
+          "x": "75.53593",
+          "y": "402.23206"
+        },
+        "handles": [
+          {
+            "uuid": "df2cb646-bf67-466c-be78-8cbf79b4e869",
+            "type": "target",
+            "label": "",
+            "tooltip": "",
+            "x": 65.2522,
+            "y": -3.4343262
+          }
+        ],
+        "dependenciesObject": [
+          {
+            "parentId": "99845e3f-31c6-4b2f-a40e-d066b5590187",
+            "parentHandleId": "4fca2bb3-4f04-4394-844b-79e1d9e372ac",
+            "handleId": "df2cb646-bf67-466c-be78-8cbf79b4e869"
+          },
+          {
+            "parentId": "56370948-86c0-434f-bd7d-19800083cc30",
+            "parentHandleId": "8f061ed8-7d02-49d1-aeab-0853761202be",
+            "handleId": "df2cb646-bf67-466c-be78-8cbf79b4e869"
+          }
+        ],
+        "stepTitle": "Output",
+        "width": 240,
+        "height": 85
+      }
+    ],
+    "behaviours": null,
+    "agentUnicodeIcon": null,
+    "agentIconBase64": null,
+    "alignment": "Vertical"
+  },
+  "dataSources": null,
+  "prompts": [
+    {
+      "name": "Consolidated Prompt (e48ea93a)",
+      "versionChangeDescription": "Consolidated from multiple prompt segments",
+      "promptMessage": "Send MUHAMMAD ZAYD DAWOOD a Slack DM, notifying him a new Invoice has been Denied. Include the Invoice number, Company name, and Total only.",
+      "isAgentSpecific": true,
+      "id": "e48ea93a-0f6c-4a1c-8a3b-6b8d94d356cb"
+    },
+    {
+      "name": "Consolidated Prompt (352279fb)",
+      "versionChangeDescription": "Consolidated from multiple prompt segments",
+      "promptMessage": "You are expert summarizer, Your task is to analyze given data and create a clear and thorough summary of the data presented",
+      "isAgentSpecific": true,
+      "id": "352279fb-e826-4935-8132-5f0498083dc7"
+    },
+    {
+      "name": "Consolidated Prompt (183db621)",
+      "versionChangeDescription": "Consolidated from multiple prompt segments",
+      "promptMessage": "Send MUHAMMAD ZAYD DAWOOD a Slack DM, notifying him a new Invoice has been approved. Include the Invoice number, Company name, and Total only.",
+      "isAgentSpecific": true,
+      "id": "183db621-b378-4d09-aa5d-6178954b546b"
+    }
+  ],
+  "tools": [
+    {
+      "toolType": "McpInternalSlack",
+      "name": "Slack MCP",
+      "standardizedName": "McpInternalSlack_25639f98eb7a48a8951454923e0346cd",
+      "toolDescription": "Search messages, channels, and retrieve team conversations",
+      "purpose": "Perform actions using Slack MCP Server.",
+      "apiEndpoint": "http://airia-mcp-slack-svc",
+      "credentialsDefinition": {
+        "name": "**placeholder**",
+        "credentialType": "SlackBotAccessToken",
+        "sourceType": "userProvided",
+        "credentialDataList": [
+          {
+            "key": "Header",
+            "value": "**placeholder**"
+          },
+          {
+            "key": "HeaderValue",
+            "value": "**placeholder**"
+          }
+        ],
+        "displayIdentifierName": "**placeholder**",
+        "administrativeScope": "Project",
+        "origin": "Platform",
+        "customCredentials": null,
+        "id": "d3bcba4a-cb5e-4ce3-a731-5e9a1e83ac32"
+      },
+      "headersDefinition": [],
+      "body": "",
+      "parametersDefinition": [],
+      "methodType": "GET",
+      "routeThroughACC": false,
+      "accGroup": null,
+      "iconUrl": "https://airia.com/assets/app-icons/Slack.svg",
+      "useUserCredentials": false,
+      "useUserCredentialsType": "SlackBotAccessToken",
+      "provider": "Slack",
+      "bodyType": "Json",
+      "numberOfPages": null,
+      "shouldRetrieveFullPageContent": null,
+      "schemaDefinition": null,
+      "requestTimeout": 100,
+      "shouldReroute": true,
+      "credentialsSourceType": "userProvided",
+      "useJwtForwarding": false,
+      "id": "9937daac-982b-4fe2-b552-b49dd93bb296"
+    }
+  ],
+  "models": [
+    {
+      "id": "7dfea977-3ce5-4986-abc5-ffc312053a2e",
+      "displayName": "GPT 4.1",
+      "modelName": "gpt-4.1-2025-04-14",
+      "promptId": null,
+      "systemPromptDefinition": null,
+      "inputType": "image",
+      "provider": "OpenAI",
+      "sourceType": "library",
+      "libraryModelId": "7e9a1b22-3c5f-4a57-a9d4-8b6d1e5f8a27",
+      "author": "OpenAI",
+      "category": "Multimodal"
+    },
+    {
+      "id": "6bbc8351-537d-4fac-aa79-79884b057c00",
+      "displayName": "GPT 4.1",
+      "modelName": "gpt-4.1-2025-04-14",
+      "promptId": null,
+      "systemPromptDefinition": null,
+      "inputType": "image",
+      "provider": "OpenAI",
+      "sourceType": "library",
+      "libraryModelId": "7e9a1b22-3c5f-4a57-a9d4-8b6d1e5f8a27",
+      "author": "OpenAI",
+      "category": "Multimodal"
+    }
+  ],
+  "memories": null,
+  "pythonCodeBlocks": null,
+  "routers": null,
+  "approvalRequests": [
+    {
+      "id": "244d1ee2-f549-452f-8131-f8ce22220c92",
+      "message": "New Invoice! Please verify request.",
+      "emailNotification": true,
+      "approvalDescription": "A slack message will be sent",
+      "denialDescription": "A slack message will be sent",
+      "approvedHandleId": "49792193-6252-4acc-9cac-3f26cb22ff67",
+      "deniedHandleId": "16bb3950-9339-429c-8175-0a035b14037c"
+    }
+  ],
+  "webhookApprovalRequests": null,
+  "agentCards": null,
+  "subAgents": null,
+  "deployment": null,
+  "interfaces": null,
+  "sdkSteps": null
+}
